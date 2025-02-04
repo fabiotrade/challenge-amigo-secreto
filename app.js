@@ -36,6 +36,19 @@ function AtualizarLista(){
 
 AtualizarLista();
 
+// Função para sortear um nome recebido da lista de maneira aleatoria
+function sortearAmigo(){
+    if (amigos.length === 0){
+        alert('A lista de amigos ainda esta vazia! Por favor adicione um nome para o sorteio!')
+        return;
+    }
+    let amigosAleatorios = Math.floor(Math.random() * amigos.length);
+    let amigoSorteado = amigos[amigosAleatorios];
+    document.getElementById("resultado").innerHTML = `O amigo secreto é: <strong>${amigoSorteado}</strong>`;
+    amigos.splice(amigosAleatorios, 1);
+    AtualizarLista();
+} 
+
 
 
 
