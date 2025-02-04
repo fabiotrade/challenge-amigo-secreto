@@ -25,4 +25,17 @@ function adicionarAmigo(){
     console.log(nome);
 } 
 
+// Função para inserção de nomes numa lista HTML
+function AtualizarLista(){
+    let lista = document.getElementById('listaAmigos')
+    lista.innerHTML = '';
+    amigos.forEach(function(nome) {
+    lista.innerHTML += `<li>${nome}</li>`
+    })
+    }
+
+AtualizarLista();
+
+
+
 
