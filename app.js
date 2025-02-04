@@ -48,6 +48,11 @@ function sortearAmigo(){
     amigos.splice(amigosAleatorios, 1);
     AtualizarLista();
 } 
+//Função para limpar o campo de inserção de nomes
+function limparCampo(){
+    nome = document.getElementById('amigo')
+    nome.value = '';
+}
 
 
 
